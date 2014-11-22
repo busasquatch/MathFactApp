@@ -42,8 +42,12 @@ for numbers 1 through 12!"), p()),
         tabPanel("About",
                  fluidRow(
                    #About.md in same directory as ui.R and server.R
-                   includeMarkdown("About.md")))
-        )
+                   includeMarkdown("About.md"))),
+        tabPanel("Known Issues",
+                 fluidRow(
+                   #Issues.md in same directory as ui.R and server.R
+                   includeMarkdown("Issues.md")))
+        ) # end tabsetPanel
       ) # end  mainPanel
     ) # end sidebarLayout  
   ) # end fluidPage 
